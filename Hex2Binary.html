@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Hex to Binary Conversion - Brad Jones</title>
+
+</head>
+
+<body>
+
+<p id="demo">
+
+<table style="border: 1px solid black">
+<tr>
+    <th>Hex</th>
+    <th>Binary</th>
+</tr>
+<tr>
+<td>
+
+	<script type="text/javascript">
+
+	for(var loopcount = 0; loopcount <16; loopcount++){
+		if(loopcount <= 9){
+		document.write(loopcount + "</br>")
+		}
+		else{
+			var hexconv = 0
+			if (loopcount == 10){
+				hexconv = "A"
+			}
+			if (loopcount == 11){
+				hexconv = "B"
+			}
+			if (loopcount == 12){
+				hexconv = "C"
+			}
+			if (loopcount == 13){
+				hexconv = "D"
+			}
+			if (loopcount == 14){
+				hexconv = "E"
+			}
+			if (loopcount == 15){
+				hexconv = "F"
+			}
+		document.write(hexconv + "</br>")
+		}
+	}
+	
+	</script>
+
+</td>
+<td>
+
+	<script type="text/javascript">
+	for(var outer = 0; outer < 2; outer++) {
+        for(var middle = 0; middle < 2; middle++) {
+            for (var inner = 0; inner < 2; inner++) {
+                for(var first = 0; first < 2; first++) {
+				document.write(" | " + outer + "" + middle + "" +inner + "" +first + "" +"</br>");    
+                }        
+           	}
+       	}
+   	}    
+	</script>
+
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>
